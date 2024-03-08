@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Machine Learning Project</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html#header">Back to Home Page</a></li>
+							<!-- <li class="active"><a href="generic.html">Generic Page</a></li> -->
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/novaldi-halomoan-921260139/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/envaldy" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">December, 2023</span>
+									<h1>Supervised Machine Learning</h1>
+									<p>Bank Marketing Campaign Analysis.</p>
+								</header>
+								<div class="image main"><img src="images/pic_p2.jpg" alt="" /></div>
+								<p><strong>Case Study:</strong></br>
+								For my Data Science Bootcamp final project, I conducted a case study on optimizing a bank marketing campaign for customer acquisition and cost-efficiency. I used a Kaggle dataset of a Portuguese bank's tele-marketing campaign spanning 2008-2010. The study aimed to analyze historical data to predict customer deposit decisions.</p>
+								<p>Deposits are crucial for a bank's business, acting as funding for loans, a primary source of revenue. My objectives were threefold; Understand customer deposit behavior patterns, Predict the key factors influencing deposit decisions and reduce marketing campaign costs by targeting only those most likely to deposit.</p>
+								<p><strong>Task:</strong></br>
+								To achieve those objectives, my task was to build an analytical finding and machine learning model to predict customer response to the marketing campaign and recommend cost-effective strategies. The dataset contained 41,000 rows with 21 features, including a binary target variable ("deposit decision") labeled as "yes" or "no." Notably, the target class was imbalanced, with 88% belonging to the "no" class and 12% to the "yes" class.</p>
+								<img src="images/pic_p3.jpg" alt="">
+								<p><strong>Action and Method:</strong></br>
+									I cleaned and transformed relevant data from the dataset, removing irrelevant features. However, initial analysis using PyCaret's metrics revealed low scores across most metrics, even with random sampling technique. This was due to the extreme class imbalance in the target variable (deposit decision).</p>
+								<p>To address this, I employed stratified sampling, ensuring the proportion of classes in the sample reflects the overall distribution. Subsequent hypothesis testing confirmed that the sampled features were representative of the entire dataset. </p>
+								<p>Once the class imbalance was addressed, I focused on my first objective: understanding customer deposit behavior patterns. I conducted the Conversion Rate (CVR) method and inferential statistics like correlation and hypothesis testing to identify specific groups more likely to deposit. It can be seen below:</p>
+								<img src="images/pic_pg1.jpg" alt="">
+								<p>To address the remaining predictive goals (2 and 3), I built and evaluated various machine learning models using scikit-learn and ensemble methods. I preprocessed the data and split it into training and testing sets for model training. Among several supervised learning algorithms, logistic regression emerged as the optimal model after extensive evaluation and hyperparameter tuning. The result:</p>
+								<img src="images/pic_pg2a.jpg" alt="">
+								<p>To fulfill my second objective of predicting key factors influencing deposit decisions, I performed feature extraction from the logistic regression model. Feature extraction revealed the five most influential factors impacting deposit decisions: inflation rate, longer call duration, March as the contact month, employment rate, and existing customer status (recurrent client).</p>
+								<img src="images/pic_pg2b.jpg" alt="">
+								<p>To assess the potential cost savings of using the model for targeted marketing (goal 3), a confusion matrix. will be used. Assuming a telemarketing campaign cost of €3.12 per customer and a test dataset of 2,785 individuals. If we use previous campaign method, then the cost of marketing campaign is 2785*3.12 = 8698 euros. While using model, we know who will be targeted, from 2785, 1226 are our potential clients, mispredicted individuals are 165 people. Therefore the cost of marketing campaign is only (1226+165) *3.12 or 4433 euros. From this, model may save 48% of marketing campaign budget.</p>
+								<img src="images/pic_pg3.jpg" alt="">
+								<br></br>
+								<p><strong>Result:</strong></br>
+								We found that model can save up to 48% of marketing budget, thus for combining insights from all three goals, I recommend the following business strategies:</p>
+								<p>1. Consumer Price Index, When CPI rate is low, push the telemarketing campaign to the client.</br>
+									2. Duration, Improve campaigner negotiation skills because more duration means more information that can be delivered.</br>
+									3. Period of Month, Explore the financial event in certain month such as when tax incentives on month March or bonus salary on particular months.</br>
+									4. Number of Employment Rate, When employment rate is low, do more promotion with jargon of “financial stability”.  </br>
+									5. Previous Campaign/recurring client, Build a loyalty strategy in order to strengthen relationship to the client that has been deposit before.</br>
+								</p>
+								<p><p><strong>For more detailed you can visit this link:</strong></p>
+
+								<a href="https://docs.google.com/presentation/d/1ku0k2uu3GcEvbPtoOHdiEI2ReoEEPSOR/edit#slide=id.g248b5539452_0_1467" target="_blank" style="color: blue;">Powerpoint Link</a>
+								<br></br>
+								<a href="https://github.com/envaldy/Tim_Alpha_Finpro/tree/main/Notebook" target="_blank" style="color: blue;">Github Link</a>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section> -->
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<!-- <ul><li>&copy; Untitled</li> -->
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
