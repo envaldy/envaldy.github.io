@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Supplementary Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-container {
+        		position: relative;
+        		overflow: hidden;
+        		width: 100%;
+        		max-width: 900px; /* Adjust as needed */
+        		margin: 0 auto;
+			}
+			.carousel {
+        		display: flex;
+       		 	transition: transform 0.5s ease;
+    		}
+			.carousel-item {
+        		flex: 0 0 auto;
+        		width: 100%;
+   			}
+			.carousel-btn {
+        		position: absolute;
+        		top: 50%;
+        		transform: translateY(-50%);
+        		cursor: pointer;
+        		background:transparent;
+        		color: #fff;
+        		padding: 2px;
+        		border: transparent;
+        		z-index: 2;
+				font-size: 24px;
+ 			    border-radius: 0%;
+    			transition: background-color 0.3s ease;
+			}
+
+			.carousel-btn:hover {
+ 		    background-color:turquoise;
+			}
+    		
+			.carousel-btn:focus {
+ 			outline: none;
+			border: none;
+			}
+
+			.carousel-btn.left {
+        		left: 0;
+   			}
+    		.carousel-btn.right {
+        		right: 0;
+   			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">My Other Skill Showcase</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html#header">Featured Projects</a></li>
+							<li class="active"><a href="other.html">Other Skills</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<!-- <li class="active"><a href="generic.html">Generic Page</a></li> -->
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/novaldi-halomoan-921260139/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/envaldy" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<!-- <header class="major">
+									<h3>Swipe Right or Left</h3>
+								</header> -->
+							
+								
+								<div class="carousel-container">
+									<div class="carousel">
+										<div class="carousel-item"><a href="other_tableau_adidas.html" class="image fit"><img src="images/Oth_p0tab.jpg" alt="Tableau"></a></div>
+										<div class="carousel-item"><a href="other_mysql_cafe.html" class="image fit"><img src="images/Oth_p0mys.jpg" alt="MySQL"></a></div>
+										<div class="carousel-item"><a href="other_pbi_automobi.html" class="image fit"><img src="images/Oth_p0pow.jpg" alt="PowerBI"></a></div>
+										<div class="carousel-item"><a href="other_exc_rep.html" class="image fit"><img src="images/Oth_p0exc.jpg" alt="Excel"></a></div>
+										<div class="carousel-item"><a href="other_looker_nid.html"class="image fit"><img src="images/Oth_p0look.jpg" alt="Looker"></a></div>
+										<!-- Add more images as needed -->
+									</div>
+									<button class="carousel-btn left" onclick="prevSlide()"><span style="color: teal;">&#10094;</span></button>
+									<button class="carousel-btn right" onclick="nextSlide()"><span style="color: teal;"> &#10095;</span></span></button>
+								</div>
+								<header class="major">
+									<h6>(Hover right or left, click on image for full story)</h6>
+								</header>
+								<p></p>
+								<p>In addition to expertise in data science and machine learning, I'm adept at utilizing a wide array of data analysis tools. This ensures comprehensive handling of projects from data acquisition to 
+									generating impactful visualizations and reports. Consequently, I've acquired various tools crucial for data analysis. Whether it's crafting interactive dashboards in Tableau or building efficient data with MySQL, 
+									I tailor my approach to meet each project's specific needs. As follows:</p>
+
+									<a href="other_tableau_adidas.html" target="_blank" style="color: blue;">1. Tableau (Adidas Sales Dashboard)</a><br />
+									<a href="other_mysql_cafe.html" target="_blank" style="color: blue;">2. MySQL (Cafe Daily Sales Analysis with Queries)</a><br />
+									<a href="other_pbi_automobi.html" target="_blank" style="color: blue;">3. PowerBI (Automobile Sales)</a><br />
+									<a href="other_exc_rep.html" target="_blank" style="color: blue;">4. Excel/Sheet (Reporting Analytic)</a><br />
+									<a href="other_looker_nid.html" target="_blank" style="color: blue;">5. Google Studio/Looker (Scoial Media Analytic Dashboard)</a><br />
+					
+	
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section> -->
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<!-- <ul><li>&copy; Untitled</li> -->
+						<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
+
+	</body>
+</html>
