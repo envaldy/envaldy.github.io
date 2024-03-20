@@ -11,6 +11,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-container {
+        		position: relative;
+        		overflow: hidden;
+        		width: 100%;
+        		max-width: 900px; /* Adjust as needed */
+        		margin: 0 auto;
+			}
+			.carousel {
+        		display: flex;
+       		 	transition: transform 0.5s ease;
+    		}
+			.carousel-item {
+        		flex: 0 0 auto;
+        		width: 100%;
+   			}
+			.carousel-btn {
+        		position: absolute;
+        		top: 50%;
+        		transform: translateY(-50%);
+        		cursor: pointer;
+        		background:transparent;
+        		color: #fff;
+        		padding: 2px;
+        		border: transparent;
+        		z-index: 2;
+				font-size: 24px;
+ 			    border-radius: 0%;
+    			transition: background-color 0.3s ease;
+			}
+
+			.carousel-btn:hover {
+ 		    background-color:turquoise;
+			}
+    		
+			.carousel-btn:focus {
+ 			outline: none;
+			border: none;
+			}
+
+			.carousel-btn.left {
+        		left: 0;
+   			}
+    		.carousel-btn.right {
+        		right: 0;
+   			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: auto;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -25,7 +79,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html#header">Back to Home Page</a></li>
+							<li><a href="index.html#header">Home</a></li>
+							<li><a href="other.html">Other Skills</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
 							<!-- <li class="active"><a href="generic.html">Generic Page</a></li> -->
 							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
 						</ul>
@@ -137,7 +193,7 @@
 				<!-- Copyright -->
 					<div id="copyright">
 						<!-- <ul><li>&copy; Untitled</li> -->
-						<li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
 					</div>
 
 			</div>
@@ -150,6 +206,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
 
 	</body>
 </html>
