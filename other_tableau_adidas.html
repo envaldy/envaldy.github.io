@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tableau_Adidas Sales</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-container {
+        		position: relative;
+        		overflow: hidden;
+        		width: 100%;
+        		max-width: 900px; /* Adjust as needed */
+        		margin: 0 auto;
+			}
+			.carousel {
+        		display: flex;
+       		 	transition: transform 0.5s ease;
+    		}
+			.carousel-item {
+        		flex: 0 0 auto;
+        		width: 100%;
+   			}
+			.carousel-btn {
+        		position: absolute;
+        		top: 50%;
+        		transform: translateY(-50%);
+        		cursor: pointer;
+        		background:transparent;
+        		color: #fff;
+        		padding: 2px;
+        		border: transparent;
+        		z-index: 2;
+				font-size: 24px;
+ 			    border-radius: 0%;
+    			transition: background-color 0.3s ease;
+			}
+
+			.carousel-btn:hover {
+ 		    background-color:turquoise;
+			}
+    		
+			.carousel-btn:focus {
+ 			outline: none;
+			border: none;
+			}
+
+			.carousel-btn.left {
+        		left: 0;
+   			}
+    		.carousel-btn.right {
+        		right: 0;
+   			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Tableau</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html#header">Home</a></li>
+							<li><a href="other.html">Other Skills</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/novaldi-halomoan-921260139/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/envaldy" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Adidas USA Sales Dashboard</h1>
+									<p>Unveil Insight With Tableau</p>
+								</header>
+								<div class="image main"><img src="images/oth_ptabm.jpg" alt=""></div>
+
+								<p><strong>Brief Introduction:</strong></p>
+								<p>Once regarded primarily as a sports shoe brand, Adidas has evolved into a global powerhouse shaping the athletic and fashion landscapes. While its iconic three stripes are synonymous with athleticism, Adidas has transcended its origins, captivating consumers with innovative designs and a commitment to excellence. In this exploration, we'll explore the statistical trends and consumer sentiments surrounding Adidas products. In this exploration, we'll focus on adidas USA, examining statistical trends such as sales, retail performance, comparisons, and product types using insights delivered by a Tableau dashboard. Hopefully, we'll gain valuable insights through this comparison.</p>
+								<p>The data used is sourced from Kaggle, covering the period from January 1, 2020, to December 2021, specifically focusing on the USA market. It includes key sales features such as revenue, operating profit, units sold, retail information, and locations.</p>
+								<p><strong>Case Study Scenario:</strong></p>
+								<p>A senior Adidas executive tasked a data analyst with unveiling actionable insights into the company's US market performance from 2021 to 2022. The executive was particularly interested in evaluating overall sales metrics, identifying trend and performance, and understanding variation for the sales. To facilitate further exploration, the executive requested an interactive dashboard to find out specific time or location.</p>
+								<p><strong>Adressing the Case Study:</strong></p>
+								<p><strong>1. Summarizing overall sales metrics in the form of an executive summary.</strong><br />
+									We can clearly visualize the executive summary at the top layer. This positioning is crucial because the executive summary serves as a priority, offering visibility and providing quick context. As observed, the executive summary consists of total sales, units sold, operating profit, and operating margin, serving as a basis for comparison and insight. For example, we can see quickly that their operating profit margin is 42 percent which was excellent in term of the industry standard.</p>
+								<img src="images/oth_ptab1.jpg" alt="">
+								<p></p>
+								<p><strong>2. Identifying trends over time and performance by retail.</strong><br />									
+									As part of the dashboard, I included a sales trendline to gain insight. Examining the entire period, it's evident that during quarters 3 and 4 of 2020, there was a notable slowdown in growth, largely attributable to the COVID-19 pandemic. Further research during this period revealed that Adidas increased its investment in digital stores. However, in Quarter 1 of 2021, there was a significant increase in sales and operating profit. This uptick can be attributed to the payoff from the digital investment and the easing of pandemic-related lockdowns.From the dashboard as well, we can also assess the performance of the main retail outlets. It can be seen that West Gear and Footlocker emerged as the top two retailers during the two-year period.</p>
+								<img src="images/oth_ptab2.jpg" alt="">
+								<p></p>
+								<p><strong>3. Breaking down variations into sales by region, sales by method, and sales by product type.</strong><br />
+									Analyzing the sales variation, starting with sales regions, we observe from the geospatial heatmap for that period that significant customers are from Texas, Florida, New York, and California. Regarding sales methods, in-store purchases emerge as the preferred choice. Furthermore, the preferred products are men's street footwear and women's apparel.</p>
+								<img src="images/oth_ptab3.jpg" alt="">
+								<p></p>
+								<p>Therefore, the Tableau dashboard can facilitate swift analysis and insight. Moreover, I've incorporated two interactive filters to enable analysis by specific periods, states, or both. For a simulation, you can explore the Tableau dashboard, click link below:.</p>
+								<a href="https://public.tableau.com/app/profile/novaldi.halomoan/viz/Adidas_USA_Sales_report/Dashboard12?publish=yes" target="_blank" style="color: blue;">Tableau - Adidas Sales Report</a>
+							</section>
+									
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section> -->
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<!-- <ul><li>&copy; Untitled</li> -->
+						<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
+
+	</body>
+</html>

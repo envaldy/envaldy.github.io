@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>mySQL Insight</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-container {
+        		position: relative;
+        		overflow: hidden;
+        		width: 100%;
+        		max-width: 900px; /* Adjust as needed */
+        		margin: 0 auto;
+			}
+			.carousel {
+        		display: flex;
+       		 	transition: transform 0.5s ease;
+    		}
+			.carousel-item {
+        		flex: 0 0 auto;
+        		width: 100%;
+   			}
+			.carousel-btn {
+        		position: absolute;
+        		top: 50%;
+        		transform: translateY(-50%);
+        		cursor: pointer;
+        		background:transparent;
+        		color: #fff;
+        		padding: 2px;
+        		border: transparent;
+        		z-index: 2;
+				font-size: 24px;
+ 			    border-radius: 0%;
+    			transition: background-color 0.3s ease;
+			}
+
+			.carousel-btn:hover {
+ 		    background-color:turquoise;
+			}
+    		
+			.carousel-btn:focus {
+ 			outline: none;
+			border: none;
+			}
+
+			.carousel-btn.left {
+        		left: 0;
+   			}
+    		.carousel-btn.right {
+        		right: 0;
+   			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">mySQL</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html#header">Home</a></li>
+							<li><a href="other.html">Other Skills</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/novaldi-halomoan-921260139/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/envaldy" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Cafe Dataset Analysis</h1>
+									<p>Uncover data with mySQL queries</p>
+								</header>
+								<p><strong>Introduction:</strong></p>
+								<p>During the period spanning 2015 to 2016, I, along with three friends, ventured into the business realm by establishing a cafe. Positioned as a provider of affordable food and beverages, our target demographic was university students. The venture sustained itself for 18 months until we made the decision to sell the cafe or transfer its ownership to other entrepreneurs.</p>
+								<p>Throughout our journey, we encountered several challenges, notably a lack of understanding of customer behavior and ineffective data management practices. My friends and I often resorted to manual data entry, primarily using Excel or sometimes resorting to pen and paper, resulting in exhaustive and time-consuming processes. Reflecting on our experience, we recognize the potential efficiency gains<strong>had we employed MySQL for data</strong> management, enabling us to analyze customer patterns more effectively. </p>
+								<p>This is our dataset from 2015, comprising <strong>three tables</strong>: "Penjualan" for <strong>daily sales</strong>, "HPP" for the </trong>cost of goods sold (COGS)</strong> by sub-menu type, and "Operasional" containing a summary of <strong>monthly expenses</strong>:</p>
+								
+								<p></p>
+								<img src="images/oth_sqlt_0a.jpg" alt="">
+								<p></p>
+								<img src="images/oth_sqlt_0b.jpg" alt="">
+								<p></p>
+
+								<p>Thus, in this, I'll utilize the data from our cafe during that period to showcase the benefits of MySQL in comprehensively understanding our data and deriving valuable insights from it. Hence, we will create some SQL queries from that.</p>
+								<p></p>
+								<p><strong>Scenario 1:</strong><br />
+									1. Assume we aim to determine which day generates more revenue compared to others.
+									2. We aim to pinpoint the specific dates associated with generated revenue.
+									3. We seek to identify the top 10 best-selling food menu items.
+									4. We want to find monthly revenue
+									5. We seek to highlight most sold items
+								</p>
+								<p><strong>Answer (Single Table Queries):</strong></p>
+								<p></p>
+								
+								<div class="carousel-container">
+									<div class="carousel" id = 'carousel2'>
+										<div class="carousel-item"><img src="images/oth_sqlt_q1.jpg" alt="table 1_1"></div>
+										<div class="carousel-item"><img src="images/oth_sqlt_q2.jpg" alt="table 1_2"></div>
+										<div class="carousel-item"><img src="images/oth_sqlt_q3.jpg" alt="table 1_3"></div>
+										<div class="carousel-item"><img src="images/oth_sqlt_q4.jpg" alt="table 1_4"></div>
+										<div class="carousel-item"><img src="images/oth_sqlt_q5.jpg" alt="table 1_5"></div>		
+									</div>
+									<button class="carousel-btn left" onclick="prevSlide()"><span style="color: teal;">&#10094;</span></button>
+									<button class="carousel-btn right" onclick="nextSlide()"><span style="color: teal;"> &#10095;</span></span></button>
+								</div>
+								<header class="major">
+									<h6>(Hover right or left arrow)</h6>
+								</header>
+
+								<p></p>
+								<p>Insights:</p>
+								<p>MySQL offers the advantage of efficient querying capabilities, allowing for quick and precise retrieval of revenue data based on specific criteria such as the day of the week. Additionally, its ability to handle large datasets and perform complex calculations natively within the database provides a more streamlined and scalable solution compared to Excel.</p>								
+								</p>
+								<p></p>
+								<p><strong>Scenario 2:</strong><br />
+									1. Finding gross profit.
+									2. Finding total sales per category
+								</p>
+								<p><strong>Answer (Join Queries):</strong></p>
+								<p></p>
+								<img src="images/oth_sqlt_q6.jpg" alt="">	
+								<p></p>
+								<img src="images/oth_sqlt_q7.jpg" alt="">	
+								<p></p>
+								<p>Rather than engaging in exhaustive and time-consuming manual inputting into Excel and using calculators, MySQL offers an efficient method for joining two tables seamlessly.</p>
+								<p></p>
+								<p><strong>Scenario 3: Finding net-profit/loss using Three-way Join Queries</strong><br />
+								<p></p>
+								<img src="images/oth_sqlt_q8.jpg" alt="">	
+								<p></p>
+								<p>Moreover, in our scenario, had we utilized MySQL, there would be no need to input data from three separate tables into a fourth table to calculate our net profit. With MySQL, this task could be accomplished through three-way joined queries, streamlining the process significantly.</p>
+								<p>In the end, MySQL's relational database structure facilitates efficient organization and retrieval of sales data, enabling cafes to track transactions, analyze trends, and make data-driven decisions effectively.</p>
+							</section>
+									
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section> -->
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<!-- <ul><li>&copy; Untitled</li> -->
+						<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
+
+	</body>
+</html>

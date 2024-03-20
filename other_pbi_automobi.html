@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PowerBI - automobile</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-container {
+        		position: relative;
+        		overflow: hidden;
+        		width: 100%;
+        		max-width: 900px; /* Adjust as needed */
+        		margin: 0 auto;
+			}
+			.carousel {
+        		display: flex;
+       		 	transition: transform 0.5s ease;
+    		}
+			.carousel-item {
+        		flex: 0 0 auto;
+        		width: 100%;
+   			}
+			.carousel-btn {
+        		position: absolute;
+        		top: 50%;
+        		transform: translateY(-50%);
+        		cursor: pointer;
+        		background:transparent;
+        		color: #fff;
+        		padding: 2px;
+        		border: transparent;
+        		z-index: 2;
+				font-size: 24px;
+ 			    border-radius: 0%;
+    			transition: background-color 0.3s ease;
+			}
+
+			.carousel-btn:hover {
+ 		    background-color:turquoise;
+			}
+    		
+			.carousel-btn:focus {
+ 			outline: none;
+			border: none;
+			}
+
+			.carousel-btn.left {
+        		left: 0;
+   			}
+    		.carousel-btn.right {
+        		right: 0;
+   			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Power BI</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html#header">Home</a></li>
+							<li><a href="other.html">Other Skills</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/novaldi-halomoan-921260139/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/envaldy" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Automobile Sales Report</h1>
+									<p>Elevate Understanding with PowerBI</p>
+								</header>
+								<div class="image main"><img src="images/oth_pbi_intro.jpg" alt=""></div>
+
+								<p><strong>Introduction:</strong></p>
+								<p>In this article, we'll analyze into the sales data of automobile manufacturer products. Our analysis will focus on the period from early 2003 to middle 2005, aiming to uncover key insights. The dataset used for this analysis is sourced from Kaggle and is titled "sampledataset(dot)CSV".</p>
+								
+								<p><strong>Case Study Scenario:</strong></p>
+								<p>Assume management tasked data analyst with this questions:<br />
+									1. Management wants to review the overall sales performance for the whole period (2003 to mid-2005).<br />
+									2. Management wants to examine the specific sales performance for the year 2004.<br />
+									3. Management wants to view the sales data for specific countries, such as countries in the Asia Market.</p>
+								<p><strong>Answer:</strong></p>
+								<p></p>
+								<p><strong>1. View overal sales data:</strong>
+								<p></p>
+								<img src="images/oth_pbi_m.jpg" alt="">
+								<p></p>
+								<p>From the executive summary, total sales amounted to $716 million over the period, with 99,000 units sold with 2823 partners all over the globe. Sales trend appears to be fluctuating, with noticeable peaks in November 2003 and November 2004, reaching $78 million and $75 million, respectively. But it steeped down in December 2004 and December 2005, which may indicates the seasonal trends, year-end budgets from the partners, or even year-end clearance of their inventory.</p>
+								<p>The United States (USA) emerges as the top-selling market, generating $258 million in sales, followed by Spain ($84 million), France ($78 million), Australia ($45 million), and the United Kingdom ($35 million). This indicates key markets for the company's products and potential areas for further investment or focus. For the product type, Classic cars are the top-selling product category, with 34,000 units sold, followed by Vintage cars with 21,000 units. On the other hand, trains represent the lowest-selling product category, with only 3,000 units sold.</p>
+								<p></p>
+								<p><strong>2. Sales in 2004:</strong>
+								<p></p>
+								<img src="images/oth_pbi_2004.jpg" alt="">
+								<p></p>
+								<p>In 2004, sales reached $335M, with 46K units sold. The peak sales occurred in November 2024. The top markets were the USA and Spain, with Germany notably emerging as a significant market with sales of $13M for the year, compared to $17M for the entire period. The product type and deal size exhibited a relatively similar pattern compared to the entire period. </p>
+								<p></p>
+								<p><strong>3. Sales in Asia Market:</strong>
+								<p></p>
+								<p>We can use the filter country.</p>
+								<p></p>
+								<img src="images/oth_pbi_af.jpg" alt="">
+								<p></p>
+								<p>There are three Asian countries in the market: Singapore, Japan, and the Philippines. Their sales are as seen below:</p>
+								<p></p>
+								<img src="images/oth_pbi_as.jpg" alt="">
+								<p></p>
+								<p>In the Asian countries, sales amount to $39M with a quantity sold of 5563 units. Their peak sales month occurs in October, slightly different from other markets mentioned previously, which peak in November. Singapore leads as the top market with sales of $15.9M, followed by Japan and the Philippines with sales of $11.1M and $7.8M, respectively. Classic cars dominate in product type, but the second most ordered category is trucks and buses, indicating a notable demand for this type.</p>
+								
+							</section>
+									
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section> -->
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<!-- <ul><li>&copy; Untitled</li> -->
+						<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
+
+	</body>
+</html>
