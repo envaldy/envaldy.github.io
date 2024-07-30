@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Main - Deep Learning Image</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-container {
+        		position: relative;
+        		overflow: hidden;
+        		width: 100%;
+        		max-width: 900px; /* Adjust as needed */
+        		margin: 0 auto;
+			}
+			.carousel {
+        		display: flex;
+       		 	transition: transform 0.5s ease;
+    		}
+			.carousel-item {
+        		flex: 0 0 auto;
+        		width: 100%;
+   			}
+			.carousel-btn {
+        		position: absolute;
+        		top: 50%;
+        		transform: translateY(-50%);
+        		cursor: pointer;
+        		background:transparent;
+        		color: #fff;
+        		padding: 2px;
+        		border: transparent;
+        		z-index: 2;
+				font-size: 24px;
+ 			    border-radius: 0%;
+    			transition: background-color 0.3s ease;
+			}
+
+			.carousel-btn:hover {
+ 		    background-color:turquoise;
+			}
+    		
+			.carousel-btn:focus {
+ 			outline: none;
+			border: none;
+			}
+
+			.carousel-btn.left {
+        		left: 0;
+   			}
+    		.carousel-btn.right {
+        		right: 0;
+   			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a class="logo">Deep Learning Project</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html#header">Home</a></li>
+							<li><a href="other.html">Other Skills</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<!-- <li class="active"><a href="generic.html">Generic Page</a></li> -->
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/novaldi-halomoan-921260139/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/envaldy" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://medium.com/@novaldihalomoan" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">July, 2024</span>
+									<h1>Deep Learning with Tensorflow</h1>
+									<p>Image Recognition using Convolutional Neural Network.</p>
+								</header>
+								<div class="image main"><img src="images/DL_0_title.jpg" alt="" /></div>
+								<p><strong>Context:</strong></br>
+									In this era, the term Artificial Intelligence is booming, and its core process is <strong> deep learning</strong>. But what differentiates deep learning from machine learning? Machine learning typically relies on structured data and requires manual feature extraction. In contrast, deep learning handles complex, unstructured data and automatically learns features. The picture below may explain the difference.
+								</p>
+								<p></p>
+								<img src="images/DL_0.jpg" alt="">
+								<p></p>
+								<p>In machine learning, input features are manually extracted, then in classification, as shown in the image, it becomes binary, with the output being either cat or not cat based on feature extraction or selection. However, in deep learning, input and its unstructured data are used for automatic learning, enabling more complex tasks to determine output, such as identifying birds, dogs, or cats. Furthermore, deep learning excels at challenging tasks like <strong>image recognition</strong> and natural language processing, as it is commonly based on neural networks.</p>
+								<p><strong>Task:</strong></br>
+									Therefore, in this case, we aim to classify images into specific categories using deep learning and neural networks. After building the model, we will evaluate its performance by providing new, unseen images and observing its categorization accuracy.</p>
+								<p><strong>Action and Method:</strong></br>
+								<p></p>
+								<img src="images/DL_1a.jpg" alt=""></br>
+								<p>For this project, we will employ <strong>TensorFlow</strong>, a leading deep learning framework, to classify images using <strong>Convolutional Neural Networks (CNNs)</strong>. TensorFlow's open-source nature and flexibility, centered around tensor operations, make it ideal for developing complex models like <strong>gemini AI of google</strong>. CNNs excel at image processing by extracting features through multiple layers, including convolutional and pooling layers, before final classification.</p>
+								<p>To train our model, we will utilize the <strong>CIFAR-10 dataset</strong>, which contains over 50,000 images categorized into classes. TensorFlow will preprocess these images, ensuring consistent dimensions, before feeding them into the neural network. The model will learn to optimize its parameters through <strong>backpropagation</strong>, using an <strong>optimizer</strong> to adjust weights and learning rates based on the calculated loss. <strong>Activation</strong> functions will introduce non-linearity, enabling the network to capture intricate patterns within the image data. <strong>Multiple training epochs</strong> will refine the model's accuracy iteratively. </p>
+								<img src="images/DL_1b.jpg" alt=""></br>
+								<p>Based on <strong>epoch 6</strong>, we identified the model with the least overfitting or underfitting as our <strong>stable model</strong>. This model will be used to test new data. Since the model was trained on the CIFAR-10 dataset, which consists of real-world images, we will <strong>evaluate its performance</strong> on cartoon characters like <strong>Lightning McQueen from Cars</strong> and the famous meme character <strong>doggo</strong>. This will assess the model's ability to generalize to unseen data that will be explained in result segment.</p>
+								<p><strong>Result:</strong></br>
+								<p></p>
+								<img src="images/DL_2a.jpg" alt=""></br>
+								<p>The model accurately classified <strong>McQueen</strong> as an <strong>automobile</strong> and also <strong>doggo</strong> as a <strong>dog</strong>. However, when testing with a new image, <strong>my profile picture</strong> below (intentionally blurred for this article), we will see incorrect detection..</p>
+								<img src="images/DL_2b.jpg" alt=""></br>
+								<p>The model incorrectly classified it as a <strong>truck</strong>. This misclassification likely occurred due to <strong>insufficient training data representing humans</strong>. To address this issue, two potential solutions were considered: <strong>fine-tuning</strong> the existing model or <strong>expanding the dataset</strong> with more human faces. Opting for the <strong>latter</strong>, the dataset was augmented with additional human face images. While the overall accuracy remained similar, the model successfully <strong>reclassified my profile picture as a human</strong>, indicating an improvement in performance, as seen below.</p>
+								<img src="images/DL_2c.jpg" alt=""></br>
+								<p>In the end, deep learning offer various applicable things in real world but the lesson learned here like Machine Learning, Deep learning is only as good as the data collection and the processed data itself. This experiment highlights the critical role of <strong>data quality and quantity</strong> in the success of machine learning and <strong>deep learning</strong> models.</p>
+	
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section> -->
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<!-- <ul><li>&copy; Untitled</li> -->
+						<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
+
+	</body>
+</html>
